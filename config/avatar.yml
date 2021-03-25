@@ -1,0 +1,13 @@
+session: avatar
+
+root: ~/datenshi/avatarserver
+
+windows:
+  - name: avatar
+    layout: main-horizontal
+    commands:
+      - python3 avatar-server.py
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

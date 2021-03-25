@@ -1,0 +1,13 @@
+session: peppy
+
+root: ~/datenshi/pep.py
+
+windows:
+  - name: pep.py
+    layout: main-horizontal
+    commands:
+      - python3.6 pep.py
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

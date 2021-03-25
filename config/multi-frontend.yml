@@ -1,0 +1,13 @@
+session: multi-frontend
+
+root: ~/datenshi/multi/vinse/web
+
+windows:
+  - name: multi-frontend
+    layout: main-horizontal
+    commands:
+      - npm run dev
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

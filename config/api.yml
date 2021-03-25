@@ -1,0 +1,13 @@
+session: api
+
+root: ~/datenshi/api
+
+windows:
+  - name: api
+    layout: main-horizontal
+    commands:
+      - ./api
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

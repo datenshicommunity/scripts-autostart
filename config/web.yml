@@ -1,0 +1,13 @@
+session: web
+
+root: ~/datenshi/hanayo
+
+windows:
+  - name: web
+    layout: main-horizontal
+    commands:
+      - ./hanayo
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

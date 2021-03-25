@@ -1,0 +1,13 @@
+session: yohane
+
+root: ~/datenshi/yohane
+
+windows:
+  - name: yohane
+    layout: main-horizontal
+    commands:
+      - node .
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

@@ -1,0 +1,13 @@
+session: multi-backend
+
+root: ~/datenshi/multi/vinse-backend
+
+windows:
+  - name: multi-backend
+    layout: main-horizontal
+    commands:
+      - ./vinse-backend
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

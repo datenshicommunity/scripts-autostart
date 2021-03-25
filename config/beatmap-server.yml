@@ -1,0 +1,13 @@
+session: beatmap-server
+
+root: ~/datenshi/proxybm
+
+windows:
+  - name: beatmap-server
+    layout: main-horizontal
+    commands:
+      - python3.6 aoba-proxy.py
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach

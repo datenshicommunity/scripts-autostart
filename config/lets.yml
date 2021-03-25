@@ -1,0 +1,13 @@
+session: lets
+
+root: ~/datenshi/lets
+
+windows:
+  - name: lets
+    layout: main-horizontal
+    commands:
+      - python3.6 lets.py
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach
