@@ -8,4 +8,7 @@ smug start multi-backend --detach
 smug start multi-frontend --detach
 smug start peppy --detach
 smug start yohane --detach
+smug start web --detach
+smug start megumin --detach
+smug start network --detach
 echo 'Completed'
