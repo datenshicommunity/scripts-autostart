@@ -1,0 +1,17 @@
+session: network
+
+windows:
+  - name: network
+    layout: main-horizontal
+    commands:
+      - iftop
+    panes:
+      - type: horizontal
+        commands:
+          - htop
+      - type: vertical
+        commands:
+          - nethogs
+      - type: vertical
+        commands:
+          - clear

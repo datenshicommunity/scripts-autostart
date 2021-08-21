@@ -1,0 +1,13 @@
+session: megumin
+
+root: ~/datenshi/megumin
+
+windows:
+  - name: megumin
+    layout: main-horizontal
+    commands:
+      - node .
+    panes:
+      - type: horizontal
+        commands:
+          - tmux detach
