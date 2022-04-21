@@ -1,0 +1,13 @@
+session: nadeko
+
+root: ~/NadekoBot
+
+windows:
+  - name: nadeko
+    layout: main-horizontal
+    commands:
+      - dotnet run -C Release -p src/NadekoBot/NadekoBot.csproj
+    panes:
+      - type: horizontal
+        commands:
+          - echo success

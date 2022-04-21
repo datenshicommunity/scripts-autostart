@@ -11,4 +11,8 @@ smug start yohane --detach
 smug start web --detach
 smug start megumin --detach
 smug start network --detach
+smug start gopi --detach
+smug start yohaneirc --detach
+smug start exhentai --detach
+smug start nadeko --detach
 echo 'Completed'
