@@ -11,7 +11,4 @@ windows:
           - htop
       - type: vertical
         commands:
-          - nethogs
-      - type: vertical
-        commands:
           - clear

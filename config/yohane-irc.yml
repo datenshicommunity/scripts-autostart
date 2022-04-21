@@ -1,12 +1,12 @@
-session: multi-frontend
+session: yohane-irc
 
-root: ~/datenshi/multi/vinse
+root: ~/datenshi/yohane-irc
 
 windows:
-  - name: multi-frontend
+  - name: yohane-irc
     layout: main-horizontal
     commands:
-      - npm run dev
+      - ./matterbridge
     panes:
       - type: horizontal
         commands:

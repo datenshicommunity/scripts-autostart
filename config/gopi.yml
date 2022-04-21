@@ -1,12 +1,12 @@
-session: multi-frontend
+session: ip-backend
 
-root: ~/datenshi/multi/vinse
+root: ~/datenshi/gopi
 
 windows:
-  - name: multi-frontend
+  - name: ip-backend
     layout: main-horizontal
     commands:
-      - npm run dev
+      - ./gopi
     panes:
       - type: horizontal
         commands:

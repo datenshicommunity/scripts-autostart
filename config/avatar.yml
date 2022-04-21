@@ -10,4 +10,4 @@ windows:
     panes:
       - type: horizontal
         commands:
-          - tmux detach
+          - clear
