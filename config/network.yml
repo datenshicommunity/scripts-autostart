@@ -2,7 +2,7 @@ session: network
 
 windows:
   - name: network
-    layout: main-horizontal
+    layout: tiled
     commands:
       - iftop
     panes:
@@ -10,5 +10,4 @@ windows:
         commands:
           - htop
       - type: vertical
-        commands:
-          - clear
+        commands: []

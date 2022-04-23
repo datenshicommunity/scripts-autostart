@@ -1,0 +1,5 @@
+$mcpanel="https://panel.pterodactyl.io"
+$mcpaneltoken="API client"
+$mcpanelcookies="Cookies Client"
+$mcserverid="Server ID"
+

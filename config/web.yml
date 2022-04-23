@@ -2,12 +2,14 @@ session: web
 
 root: ~/datenshi/hanayo
 
+stop:
+  - tmux send-keys -t web.0 "C-c" ENTER
+
 windows:
   - name: web
-    layout: main-horizontal
+    layout: tiled
     commands:
       - ./hanayo
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

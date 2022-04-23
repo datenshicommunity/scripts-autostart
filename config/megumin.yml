@@ -4,10 +4,9 @@ root: ~/datenshi/megumin
 
 windows:
   - name: megumin
-    layout: main-horizontal
+    layout: tiled
     commands:
       - node .
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

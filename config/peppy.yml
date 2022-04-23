@@ -1,13 +1,16 @@
+rebalance_panes_after: 5
+root: /root/datenshi/pep.py
 session: peppy
-
-root: ~/datenshi/pep.py
-
 windows:
-  - name: pep.py
-    layout: main-horizontal
-    commands:
-      - python3.6 pep.py
-    panes:
-      - type: horizontal
-        commands:
-          - clear
+- commands:
+  - python3.6 pep.py
+  layout: tiled
+  name: peppy
+  panes:
+  - commands: []
+  - commands: []
+  - commands: []
+- layout: 67c4,224x58,0,0,72
+  name: bash
+  panes: []
+  root: /var/lib/mysql

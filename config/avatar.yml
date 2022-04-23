@@ -4,10 +4,9 @@ root: ~/datenshi/avatarserver
 
 windows:
   - name: avatar
-    layout: main-horizontal
+    layout: tiled
     commands:
       - python3 avatar-server.py
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

@@ -1,13 +1,54 @@
+rebalance_panes_after: 5
+root: /root/datenshi/lets
 session: lets
-
-root: ~/datenshi/lets
-
 windows:
-  - name: lets
-    layout: main-horizontal
-    commands:
-      - python3.6 lets.py
-    panes:
-      - type: horizontal
-        commands:
-          - clear
+- commands:
+  - while :; do python3.6 lets.py; sleep 1.0; done
+  layout: tiled
+  name: lets
+  panes:
+  - commands:
+    - echo 'Git-n-Build here'
+  - commands:
+    - echo 'Hotfix here'
+  - commands:
+    - echo 'Misc here'
+- commands:
+  - cd /root/scripts-autostart/config
+  layout: tiled
+  name: lets-misc
+  panes:
+  - commands:
+    - cd /root/datenshi/beatmap-cache/archive
+  - commands: []
+  - commands:
+    - redis-cli
+- commands:
+  - htop
+  layout: tiled
+  name: sonic-server
+  panes:
+  - commands:
+    - cd ../lets
+  - commands:
+    - sonic -c config.cfg
+  - commands: []
+  root: /root/datenshi/lets-sonic
+- layout: tiled
+  name: sonic-client
+  panes:
+  - commands: []
+  - commands: []
+  - commands:
+    - cd secret/amelia
+- commands:
+  - cd pp/osu-tools/PerformanceCalculator
+  layout: tiled
+  name: pp
+  panes:
+  - commands:
+    - cd /root/datenshi/lets
+  - commands:
+    - cd pp/osu-tools/osu
+  - commands:
+    - cd pp/osu-tools/PerformanceCalculator

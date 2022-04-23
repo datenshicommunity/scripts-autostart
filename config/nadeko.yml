@@ -1,13 +1,12 @@
+rebalance_panes_after: 5
 session: nadeko
-
-root: ~/NadekoBot
-
 windows:
-  - name: nadeko
-    layout: main-horizontal
-    commands:
-      - dotnet run -C Release -p src/NadekoBot/NadekoBot.csproj
-    panes:
-      - type: horizontal
-        commands:
-          - echo success
+- commands:
+  - dotnet run -c Release -p src/NadekoBot/NadekoBot.csproj
+  layout: tiled
+  name: nadeko-hq
+  panes:
+  - commands: []
+  - commands: []
+  - commands: []
+  root: /root/NadekoBot

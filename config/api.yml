@@ -2,12 +2,14 @@ session: api
 
 root: ~/datenshi/api
 
+stop:
+  - tmux send-keys -t api.0 "C-c" ENTER
+
 windows:
   - name: api
-    layout: main-horizontal
+    layout: tiled
     commands:
       - ./api
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

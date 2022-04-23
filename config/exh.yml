@@ -1,0 +1,13 @@
+rebalance_panes_after: 5
+session: exh
+windows:
+- commands:
+  - npm start
+  layout: tiled
+  name: bash
+  panes:
+  - commands: []
+  - commands:
+    - ./rerun 08:30
+  - commands: []
+  root: /root/exhentai-db

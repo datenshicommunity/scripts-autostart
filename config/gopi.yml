@@ -2,12 +2,14 @@ session: ip-backend
 
 root: ~/datenshi/gopi
 
+stop:
+  - tmux send-keys -t ip-backend.0 "C-c" ENTER
+
 windows:
   - name: ip-backend
-    layout: main-horizontal
+    layout: tiled
     commands:
       - ./gopi
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

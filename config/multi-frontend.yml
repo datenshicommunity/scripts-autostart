@@ -4,10 +4,9 @@ root: ~/datenshi/multi/vinse
 
 windows:
   - name: multi-frontend
-    layout: main-horizontal
+    layout: tiled
     commands:
       - npm run dev
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

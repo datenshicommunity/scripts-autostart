@@ -2,12 +2,14 @@ session: multi-backend
 
 root: ~/datenshi/multi/vinse-backend
 
+stop:
+  - tmux send-keys -t multi-backend.0 "C-c" ENTER
+
 windows:
   - name: multi-backend
-    layout: main-horizontal
+    layout: tiled
     commands:
       - ./vinse-backend
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []

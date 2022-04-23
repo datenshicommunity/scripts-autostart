@@ -4,10 +4,9 @@ root: ~/datenshi/yohane
 
 windows:
   - name: yohane
-    layout: main-horizontal
+    layout: tiled
     commands:
       - node .
     panes:
       - type: horizontal
-        commands:
-          - clear
+        commands: []
