@@ -9,6 +9,7 @@ windows:
   - name: yohane-irc
     layout: tiled
     commands:
+      - sleep 10
       - ./matterbridge
     panes:
       - type: horizontal

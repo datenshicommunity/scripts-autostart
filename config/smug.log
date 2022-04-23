@@ -1,0 +1,2 @@
+tmux has-session -t discord-yohane:
+tmux attach -d -t discord-yohane:

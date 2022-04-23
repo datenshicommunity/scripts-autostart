@@ -1,9 +1,9 @@
-session: yohane
+session: discord-yohane
 
 root: ~/datenshi/yohane
 
 windows:
-  - name: yohane
+  - name: discord-yohane
     layout: tiled
     commands:
       - node .
