@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script stop
-for config in $(smug list); do
+for config in $(smug list | sort); do
   smug stop "$config"
 done
 sleep 3

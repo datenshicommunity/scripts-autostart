@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script Start
-for config in $(smug list); do
+for config in $(smug list | sort); do
   smug start "$config" --detach
 done
 sleep 3
