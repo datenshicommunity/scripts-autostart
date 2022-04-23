@@ -7,7 +7,7 @@ sleep 3
 
 # Minecraft start
 # Config
-source minecraft.config
+source config/global.config
 
 curl "$mcpanel/api/client/servers/$mcpanelserverid/power" \
   -H 'Accept: application/json' \
@@ -16,5 +16,9 @@ curl "$mcpanel/api/client/servers/$mcpanelserverid/power" \
   -X POST \
   -b 'pterodactyl_session'='$mcpanelcookies' \
   -d '{"signal": "start"}'
+
+sleep 3
+
+curl -X POST --data '{"content": "`[SERVER]` All-server has been started! <@176829603321610240>"}' --header "Content-Type:application/json" $webhookDC
 
 echo 'Completed'
