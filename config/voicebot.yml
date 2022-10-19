@@ -1,0 +1,14 @@
+rebalance_panes_after: 5
+session: voicebot
+windows:
+- commands:
+  - . bin/activate
+  - python3 app.py
+  layout: tiled
+  name: bash
+  panes:
+  - commands: []
+  - commands: []
+  - commands:
+    - . bin/activate
+  root: /root/senggesbot

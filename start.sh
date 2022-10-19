@@ -16,7 +16,6 @@ else
     -H "Content-Type: application/json" \
     -H "Authorization: Bearer $mcpaneltoken" \
     -X POST \
-    -b "pterodactyl_session=$mcpanelcookies"  \
     -d '{"signal": "start"}' \
     "https://panel.datenshi.pw/api/client/servers/$mcpanelserverid/power"
 fi

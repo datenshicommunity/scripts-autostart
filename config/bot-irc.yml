@@ -1,12 +1,12 @@
-session: yohane-irc
+session: bot-irc
 
 root: ~/datenshi/yohane-irc
 
 stop:
-  - tmux send-keys -t yohane-irc.0 "C-c" ENTER
+  - tmux send-keys -t bot-irc.0 "C-c" ENTER
 
 windows:
-  - name: yohane-irc
+  - name: bot-irc
     layout: tiled
     commands:
       - sleep 10

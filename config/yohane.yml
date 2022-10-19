@@ -2,6 +2,9 @@ session: yohane
 
 root: ~/datenshi/yohane
 
+stop: 
+  - tmux send-keys -t yohane.0 "C-c" ENTER
+
 windows:
   - name: discord-yohane
     layout: tiled
